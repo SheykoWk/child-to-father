@@ -1,8 +1,8 @@
-const Child = ({handlerValue}) => {
+const Child = ({value, handlerValue}) => {
 
 
     return(
-        <button onClick={() => handlerValue('Informacion desde el componente hijo')}>Mandando informacion al Padre</button>
+        <button onClick={() => handlerValue(value + 1)}>Increment</button>
     )
 }
 
